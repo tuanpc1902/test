@@ -1,0 +1,153 @@
+//@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --default-layout-header-height: 6rem;
+    --default-layout-width: 110rem;
+    --default-background-header: #0a2539;
+
+    --primary-color-blue: #0a1c53;
+    --primary-color-green: #0094ac;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --disable-background-color: #d3d3d3;
+    --primary-background-color: #0a1c53;
+    --disable-color: #ffffff;
+    --border-color: #d3d3d3;
+    --text-color: #000000;
+
+    --background-header-color: #0a2539;
+    --primary-color1: #fce921;
+    --primary-color2: #fbb811;
+
+    --border-button: #001d3a;
+    --background-dropdown: #17a6b7;
+    --text-button: #0a2539;
+
+    --table-header-text: #555e67;
+    --table-header-background: #cbdae1;
+    --table-header-background1: #163e80;
+
+    --table-cell-background-odd: #e8f7f0;
+    --table-cell-background-even: #caf3e1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    //font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    direction: ltr;
+    height: 100vh;
+    background: url('../../assets/bg-site.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    a,
+    select,
+    option,
+    nav,
+    button,
+    input {
+        cursor: pointer;
+    }
+}
+
+
+.btn {
+    background: linear-gradient(
+      92.23deg,
+      #ff56f6 21.43%,
+      #b936ee 50.63%,
+      #3bace2 100%,
+      #406aff 117.04%
+    );
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  }
+  
+  .btn:hover {
+    background: linear-gradient(
+      92.23deg,
+      #406aff 21.43%,
+      #3bace2 50.63%,
+      #b936ee 100%,
+      #ff56f6 117.04%
+    );
+  }
+  
+  .gradient,
+  .active {
+    background: linear-gradient(
+      92.23deg,
+      #406aff 21.43%,
+      #3bace2 50.63%,
+      #b936ee 100%,
+      #ff56f6 117.04%
+    );
+  }
+  
+  .active {
+    color: #fff;
+    padding: 1rem;
+    border-radius: 100%;
+  }
+
+  .container{
+    width: 110rem;
+  }
+
+.bg-btn-primary{
+  background: linear-gradient(to right, #166c86, #240e47);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+  
+  @layer base {
+    // body {
+    //   @apply font-secondary text-lg leading-8 text-white;
+    // }
+    // .h2 {
+    //   @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    // }
+    // .h3 {
+    //   @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    // }
+    // .btn {
+    //   @apply rounded-full font-primary text-white font-medium;
+    // }
+    // .btn-sm {
+    //   @apply h-[48px] px-6 text-sm;
+    // }
+    // .btn-lg {
+    //   @apply h-[56px] px-10 text-base;
+    // }
+    // .btn-link {
+    //   @apply text-base;
+    // }
+
+    .text-gradient {
+        @apply bg-gradient-to-r text-transparent bg-clip-text from-[#166c86] to-[#240e47] font-extrabold  hover:from-[#240e47] hover:to-[#166c86];
+    }
+    .bg-site{
+        @apply bg-gradient-to-b from-[#F4ABC4] to-[#F4ABC4] hover:from-[#F4ABC4] hover:to-[#F4ABC4];
+    }
+
+    // .section {
+    //   @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    // }
+  }
+  

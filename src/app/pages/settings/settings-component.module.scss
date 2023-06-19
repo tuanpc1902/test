@@ -1,0 +1,41 @@
+#main-content-setting {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f4f4f4;
+
+    .container {
+        display: flex;
+        margin: 0 auto;
+        height: calc(100vh - 60px);
+        justify-content: space-between;
+        align-items: stretch;
+        width: var(--default-layout-width);
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+
+    .left-content {
+        background-color: #555e67;
+        width: 100%;
+        flex: 0 0 356px;
+        position: relative;
+        border-radius: 8px;
+    }
+
+    .right-content {
+        width: 100%;
+        overflow-y: auto;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        -webkit-flex: 0 0 728px;
+        -ms-flex: 0 0 728px;
+        flex: 0 0 728px;
+        box-sizing: border-box;
+        padding: 16px 24px 24px;
+        z-index: 1;
+    }
+}
